@@ -11,8 +11,11 @@ class CustomSidebar extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           UserAccountsDrawerHeader(
-            accountName: const Text("userName"),
-            accountEmail: const Text("someemail@gmail.com"),
+            accountName: const Text(
+              "Jhon Doe",
+              style: TextStyle(fontSize: 24),
+            ),
+            accountEmail: const Text("ACCOUNTCODE"),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
                 child: Image.asset(
