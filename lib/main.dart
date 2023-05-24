@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:netclan_demo/components/filter_page.dart';
 import 'package:netclan_demo/constants/custom_colours.dart';
 
 import 'pages/explore_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    const GetMaterialApp(
+      home: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -20,6 +26,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blueGrey,
       ),
       home: const ExplorePage(),
+      // home: const FilterScreen(),
     );
   }
 }
